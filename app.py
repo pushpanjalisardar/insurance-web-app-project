@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
-
+import numpy as np
 model = load_model('insurance_model')
 
 def predict(model, input_df):
